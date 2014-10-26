@@ -73,7 +73,14 @@ Analysis/Script
 
 Only four steps are required to accomplish the goals of the project and generate the final text file.
 
-1) Download the data and store it in a folder on your local drive
-2) Change the working direction within setwd() in the run_analysis.R script to the folder where the data is stored
-3) Change the location where you want the final text file written out to (within write.table() function at the end of the script)
-4) Run the rest of the script
+1. Download the data and store it in a folder on your local drive
+2. Change the working direction within setwd() in the run_analysis.R script to the folder where the data is stored
+3. Change the location where you want the final text file written out to (within write.table() function at the end of the script)
+4. Run the rest of the script
+
+Final Output
+--------------------------
+
+Prior to calculating the means of each column by subject and activity, the 79 variables that dealt with the mean or standard deviation of the movements were isolated. This resulted in a dataset with 81 columns (79 variables of interest and then a column for subject and activity) and 10,299 rows. 
+
+The final tidy dataset includes the mean of each variable of interest for each subject and activity. So the final dataset contains 81 columns (same as before) and 180 rows (30 subject x 6 activities per subject).
