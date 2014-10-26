@@ -25,7 +25,8 @@ test<-test[,interest]
 test[,80]<-read.table('Y_test.txt', sep='')
 test[,81]<-read.table('subject_test.txt', sep='')
 
-# Read in the features data set and name our columns
+# Combine the training and test sets
+# and name our columns
 
 combined_data<-rbind(training,test)
 names(combined_data)<-features[,2]
